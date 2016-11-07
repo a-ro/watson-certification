@@ -8,6 +8,9 @@ The tone analyzer service analyzes the tone of a text. It can be used for any us
 - Language: Analytical, Confident, Tentative
 - Social: Openness, Conscientiousness, Extraversion, Agreeableness, Emotional Range
 
+### API Call
+Call *tone* method with *text* or *body*. Can specify the tone category with *tones='Emotion'*. Use *sentences=False* to remove the sentence level analysis.
+
 ### Blog Post Example
 Write a blog post. Send post text to tone analyzer. Verify the results and modify your text to change how people will perceive your online identity.
 
