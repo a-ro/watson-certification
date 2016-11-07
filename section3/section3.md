@@ -1,5 +1,8 @@
 # Section 3 - Fundamentals of IBM Watson Developer Cloud
 
+## 3.7. Explain how Personality Insights service works.
+
+
 ## 3.8. Explain how Tone Analyzer service works.
 The tone analyzer service analyzes the tone of a text. It can be used for any use cases requiring to write or analyze a text where the tone of the text is important: personal and business communications, market research, automated contact-center agent.
 
