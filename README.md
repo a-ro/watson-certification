@@ -9,13 +9,13 @@ I made this guide to study before the Watson certification exam. I'm following t
 
 # Examples
 ## Personality Insights
-Replace username and password with your credentials in [personality_insights_example.py](https://github.com/a-ro/watson-certification/blob/master/section3/personality/personality_insights_example).
+Replace username and password with your credentials in [personality_insights_example.py](https://github.com/a-ro/watson-certification/blob/master/section3/personality/personality_insights_example.py).
 Open a terminal. Go in the root of the project. Run the example with:
 ``` shell
 python section3/personality/personality_insights_example.py
 ```
 ## Tone Analyzer
-Replace username and password with your credentials in [tone_analyzer_example.py](https://github.com/a-ro/watson-certification/blob/master/section3/tone/tone_analyzer_example).
+Replace username and password with your credentials in [tone_analyzer_example.py](https://github.com/a-ro/watson-certification/blob/master/section3/tone/tone_analyzer_example.py).
 Open a terminal. Go in the root of the project. Run the example with:
 ``` shell
 python section3/tone/tone_analyzer_example.py
