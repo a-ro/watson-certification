@@ -12,4 +12,4 @@ The tone analyzer service analyzes the tone of a text. It can be used for any us
 Write a blog post. Send post text to tone analyzer. Verify the results and modify your text to change how people will perceive your online identity.
 
 ### Difference with Alchemy
-Alchemy sentiment only analyzes whether a sentence has a positive, negative, or mixed sentiment.
+Alchemy sentiment only analyzes whether a sentence has a positive, negative, or mixed sentiment. Alchemy emotions analyzes the emotions using the whole text (Anger, Disgust, Fear, Joy, Sadness). Tone analyzer can return the emotions for each sentence. Tone analyzer also analyzes the social and language tones.
