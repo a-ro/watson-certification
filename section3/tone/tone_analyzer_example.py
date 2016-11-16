@@ -3,9 +3,11 @@ import os
 import pandas
 from watson_developer_cloud import ToneAnalyzerV3
 
+from config import TONE_ANALYZER_USERNAME, TONE_ANALYZER_PASSWORD
+
 
 def tone_analyzer_example():
-    tone_analyzer = ToneAnalyzerV3(username='username', password='password',
+    tone_analyzer = ToneAnalyzerV3(username=TONE_ANALYZER_USERNAME, password=TONE_ANALYZER_PASSWORD,
                                    version='2016-05-19')
     text = __read_text()
     document_tone = tone_analyzer.tone(text=text)
