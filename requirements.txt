@@ -2,3 +2,4 @@ watson-developer-cloud==0.22.0
 requests==2.11.1
 pysolr==3.6.0
 pandas==0.19.1
+seaborn==0.7.1
