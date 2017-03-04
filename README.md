@@ -26,7 +26,7 @@ Run the example to analyze Trump personality with the following command:
 python section3/personality/personality_insights_example.py
 ```
 ### Trump Personality Analysis
-The code uses this [Donald Trump speech](https://github.com/a-ro/watson-certification/blob/master/section3/personality/trump.txt) in text format as input.
+The code uses this [Donald Trump's speech](https://github.com/a-ro/watson-certification/blob/master/section3/personality/trump.txt) in text format as input.
 
 We can obtain the results in a CSV format that shows a percentage for each personality trait: 
 
@@ -36,16 +36,45 @@ We can obtain the results in a CSV format that shows a percentage for each perso
 
 With a bit of seaborn magic, we can visualize Trump's personality results a bit more clearly:
 
-![Image of Yaktocat](https://github.com/a-ro/watson-certification/blob/master/section3/personality/trump-personality-results.png)
+![Trump Personality](https://github.com/a-ro/watson-certification/blob/master/section3/personality/trump-personality-results.png)
 
 According to the Personality Insights documentation, people who score high on __Sympathy__ are tender-hearted and compassionate.
 Seriously Watson, Trump's highest personality trait is SYMPATHY? ;) 
 But hey, I do agree he clearly doesn't need love.
 
 ## Tone Analyzer
+Run the example to analyze the tone of a text with the following command:
 ``` shell
 python section3/tone/tone_analyzer_example.py
 ```
+### Angry Sarcastic Text Analysis
+The example analyzes this [customer complaint](https://github.com/a-ro/watson-certification/blob/master/section3/tone/angry-text.txt).
+
+
+The Tone Analyzer will return a percentage value for each tone analyzed per sentence: 
+
+The text is divided into the following sentences:
+0. >Dear Birmingham Airport Authority
+1. >Would it be possible to install a louder, more annoying warning siren for the baggage carousels?
+2. >The Martian ray-gun sound that you have installed at present is almost, but not quite, enough to induce insanity in arriving passengers as they await their luggage.
+3. >When it fails to stop sounding, it comes very close.
+4. >Such as last night, when it went off for about 15 minutes straight (all the while the ground crew failed to push the "deliver bags" button to operate the conveyor).
+
+We obtain the following results:
+
+ |**Emotion Tone:Anger**|**Emotion Tone:Disgust**|**Emotion Tone:Fear**|**Emotion Tone:Joy**|**Emotion Tone:Sadness**|**Language Tone:Analytical**|**Language Tone:Confident**|**Language Tone:Tentative**|**Social Tone:Agreeableness**|**Social Tone:Conscientiousness**|**Social Tone:Emotional Range**|**Social Tone:Extraversion**|**Social Tone:Openness**
+:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
+0|0.174853|0.045767|0.203073|0.363684|0.288548|0.0|0.0|0.0|0.601976|0.274405|0.287173|0.549738|0.192534
+1|0.413234|0.332002|0.11745|0.09863|0.157501|0.029341|0.0|0.615352|0.092194|0.01064|0.289132|0.227488|0.732911
+2|0.103462|0.261834|0.461912|0.015445|0.308681|0.403089|0.0|0.5538|0.408464|0.509407|0.664799|0.305697|0.814446
+3|0.240445|0.10141|0.188986|0.049759|0.529359|0.0|0.849827|0.0|0.620178|0.041014|0.039034|0.312732|0.112508
+4|0.24863|0.144169|0.370541|0.075804|0.290018|0.85019|0.204269|0.0|0.002668|0.907311|0.915778|0.457429|0.078753
+
+![Tone Results](https://github.com/a-ro/watson-certification/blob/master/section3/tone/analyzed-tone.png)
+
+Well he's clearly open to change the Martian Ray-Gun alarm so I'm guessing that **openness** is right.
+It seems the results are a bit like the horoscope, you can pretty much find a reason why they fit for whatever gets predicted.
+
 ## Visual Recognition
 Classify images with the default ibm classifier:
 ``` shell

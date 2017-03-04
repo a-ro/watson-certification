@@ -1,6 +1,9 @@
 import os
 
+import numpy
 import pandas
+import seaborn
+from matplotlib import pyplot
 from watson_developer_cloud import ToneAnalyzerV3
 
 from config import TONE_ANALYZER_USERNAME, TONE_ANALYZER_PASSWORD
@@ -11,7 +14,9 @@ def tone_analyzer_example():
                                    version='2016-05-19')
     text = __read_text()
     document_tone = tone_analyzer.tone(text=text)
-    __save_to_csv(document_tone)
+    dataframe = __create_dataframe(document_tone)
+    __save_csv(dataframe)
+    __create_heatmap(dataframe)
 
 
 def __read_text():
@@ -24,7 +29,7 @@ def __read_text():
     return text
 
 
-def __save_to_csv(document_tone):
+def __create_dataframe(document_tone):
     formatted_sentence_tones = []
     for sentence_tone in document_tone['sentences_tone']:
         current_tones = {'sentence': sentence_tone['text']}
@@ -35,8 +40,31 @@ def __save_to_csv(document_tone):
             current_tones.update(category_tones)
         formatted_sentence_tones.append(current_tones)
     dataframe = pandas.DataFrame(formatted_sentence_tones)
+    return dataframe
+
+
+def __save_csv(dataframe):
     dataframe.to_csv(__get_file_path('analyzed-tone.csv'))
     print('Results were saved in analyzed-tone.csv')
+
+
+def __create_heatmap(dataframe):
+    tone_values, tone_names = __get_tone_values_and_tone_names(dataframe)
+    pyplot.subplots(figsize=(12, 8))
+    heatmap = seaborn.heatmap(tone_values)
+    heatmap.set(ylabel='Tone', xlabel='Sentence')
+    heatmap.set_yticklabels(labels=tone_names, rotation=0)
+    pyplot.savefig(__get_file_path('analyzed-tone.png'))
+    print('Heatmap created with tone results per sentence! View results in analyzed-tone.png')
+    pyplot.show()
+
+
+def __get_tone_values_and_tone_names(dataframe):
+    tone_values_without_sentences = numpy.array(dataframe.values[:, :-1], dtype=numpy.float)
+    transposed_tone_values = numpy.transpose(tone_values_without_sentences)
+    tone_names = [column_name.split(':')[1] for column_name in dataframe.columns[:-1]]
+    transposed_tone_names = list(reversed(tone_names))
+    return transposed_tone_values, transposed_tone_names
 
 
 def __get_file_path(file_name):
