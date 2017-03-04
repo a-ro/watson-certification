@@ -54,11 +54,17 @@ The example analyzes this [customer complaint](https://github.com/a-ro/watson-ce
 The Tone Analyzer will return a percentage value for each tone analyzed per sentence: 
 
 The text is divided into the following sentences:
-0. >Dear Birmingham Airport Authority
-1. >Would it be possible to install a louder, more annoying warning siren for the baggage carousels?
-2. >The Martian ray-gun sound that you have installed at present is almost, but not quite, enough to induce insanity in arriving passengers as they await their luggage.
-3. >When it fails to stop sounding, it comes very close.
-4. >Such as last night, when it went off for about 15 minutes straight (all the while the ground crew failed to push the "deliver bags" button to operate the conveyor).
+
+> Dear Birmingham Airport Authority 
+
+> Would it be possible to install a louder, more annoying warning siren for the baggage carousels?
+  
+> The Martian ray-gun sound that you have installed at present is almost, but not quite, enough to induce insanity in arriving passengers as they await their luggage.
+
+> When it fails to stop sounding, it comes very close.
+
+> Such as last night, when it went off for about 15 minutes straight (all the while the ground crew failed to push the "deliver bags" button to operate the conveyor).
+
 
 We obtain the following results:
 
