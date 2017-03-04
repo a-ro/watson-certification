@@ -46,7 +46,7 @@ def __save_to_csv(dataframe):
 
 def __create_bar_plot(dataframe):
     personality_results, column_names = __get_sorted_personality_traits_and_columns(dataframe)
-    pyplot.subplots(figsize=(16, 20))
+    pyplot.subplots(figsize=(16, 12))
     colors = __create_colors_and_legend(column_names)
     # Use palette instead of hue in barplot because seaborn renders super thin bars when using hue (seaborn bug)
     seaborn.barplot(x=personality_results, y=column_names, orient="h", palette=colors)
