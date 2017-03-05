@@ -94,3 +94,29 @@ Use your custom fruit classifier to classify images. You must add the classifier
 ``` shell
 python section3/vision/predict_custom_classifier.py 
 ```
+
+### Is Chuck Norris a Fruit?
+Spoiler: he's not. 
+
+The classifiers are tested on the following images:
+- ![Fruit Man](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/fruit-man.jpg)
+- ![Chuck Norris](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/chuck-norris.jpg)
+- ![Grumpy Cat](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/grumpy-cat.jpeg)
+- ![Unicorn Man](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/unicarn-man.jpg)
+
+
+#### IBM Pre-Trained classifier results
+**image**|**classes**|**score**
+:-----:|:-----:|:-----:|
+FruitMan|vegetation, food|0.73, 0.57
+ChuckNorris|person|0.83
+GrumpyCat|animal, mammal, cat|1.00, 1.00, 0.98
+UnicornMan|person|0.99593
+
+#### Fruit Classifier results
+**image**|**class**|**score**
+:-----:|:-----:|:-----:|
+FruitMan|fruit|0.53
+ChuckNorris|not a fruit|
+GrumpyCat|not a fruit|
+UnicornMan|not a fruit|
