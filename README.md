@@ -5,6 +5,8 @@ I made this guide to study before the Watson certification exam. I was following
 
 Due to a lack of time, I only coded examples with Watson Services I've never used before. I already passed my certification so I won't add anything more.
 
+Check the [project](https://github.com/havasnewyork/IBM-Watson-Developer-Certification-Study-Guide) of Jeronimo De Leon for a more complete Watson certification study guide.
+
 # Sections
 - [Section 1 - Fundamentals of Cognitive Computing](https://github.com/a-ro/watson-certification/blob/master/section1/section1.md)
 - [Section 3 - Fundamentals of IBM Watson Developer Cloud](https://github.com/a-ro/watson-certification/blob/master/section3/section3.md)
@@ -99,10 +101,10 @@ python section3/vision/predict_custom_classifier.py
 Spoiler: he's not. 
 
 The classifiers are tested on the following images:
-- ![Fruit Man](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/fruit-man.jpg)
-- ![Chuck Norris](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/chuck-norris.jpg)
-- ![Grumpy Cat](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/grumpy-cat.jpeg)
-- ![Unicorn Man](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/unicorn-man.jpg)
+![Fruit Man](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/fruit-man.jpg)
+![Chuck Norris](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/chuck-norris.jpg)
+![Grumpy Cat](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/grumpy-cat.jpeg)
+![Unicorn Man](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/unicorn-man.jpg)
 
 
 #### IBM Pre-Trained classifier results
@@ -111,12 +113,15 @@ The classifiers are tested on the following images:
 FruitMan|vegetation, food|0.73, 0.57
 ChuckNorris|person|0.83
 GrumpyCat|animal, mammal, cat|1.00, 1.00, 0.98
-UnicornMan|person|0.99593
+UnicornMan|person|0.99
 
-#### Fruit Classifier results
+#### Custom Fruit Classifier results
 **image**|**class**|**score**
 :-----:|:-----:|:-----:|
 FruitMan|fruit|0.53
 ChuckNorris|not a fruit|
 GrumpyCat|not a fruit|
 UnicornMan|not a fruit|
+
+# Similar Projects
+Check the [project](https://github.com/havasnewyork/IBM-Watson-Developer-Certification-Study-Guide) of Jeronimo De Leon for a more complete Watson certification study guide.
