@@ -102,7 +102,7 @@ The classifiers are tested on the following images:
 - ![Fruit Man](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/fruit-man.jpg)
 - ![Chuck Norris](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/chuck-norris.jpg)
 - ![Grumpy Cat](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/grumpy-cat.jpeg)
-- ![Unicorn Man](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/unicarn-man.jpg)
+- ![Unicorn Man](https://github.com/a-ro/watson-certification/blob/master/section3/vision/images/unicorn-man.jpg)
 
 
 #### IBM Pre-Trained classifier results
