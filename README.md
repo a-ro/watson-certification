@@ -1,15 +1,11 @@
 # watson-certification
-Study Guide for Watson Certification
+Practical examples for Watson Certification
 
-I made this guide to study before the Watson certification exam. I was following this [guide](http://public.dhe.ibm.com/partnerworld/pub/certify/Study_Guide_C7020_230.pdf)  released by IBM which details the exam objectives. Note that these answers are my own and have not been validated by IBM.
+I created this project to study before the Watson certification exam. I was following this [guide](http://public.dhe.ibm.com/partnerworld/pub/certify/Study_Guide_C7020_230.pdf)  released by IBM which details the exam objectives. Note that these answers are my own and have not been validated by IBM.
 
 Due to a lack of time, I only coded examples with Watson Services I've never used before. I already passed my certification so I won't add anything more.
 
 Check the [project](https://github.com/havasnewyork/IBM-Watson-Developer-Certification-Study-Guide) of Jeronimo De Leon for a more complete Watson certification study guide.
-
-# Sections
-- [Section 1 - Fundamentals of Cognitive Computing](https://github.com/a-ro/watson-certification/blob/master/section1/section1.md)
-- [Section 3 - Fundamentals of IBM Watson Developer Cloud](https://github.com/a-ro/watson-certification/blob/master/section3/section3.md)
 
 # Installation
 ``` shell
@@ -123,6 +119,10 @@ FruitMan|fruit|0.53
 ChuckNorris|not a fruit|
 GrumpyCat|not a fruit|
 UnicornMan|not a fruit|
+
+# Sections
+- [Section 1 - Fundamentals of Cognitive Computing](https://github.com/a-ro/watson-certification/blob/master/section1/section1.md)
+- [Section 3 - Fundamentals of IBM Watson Developer Cloud](https://github.com/a-ro/watson-certification/blob/master/section3/section3.md)
 
 # Similar Projects
 Check the [project](https://github.com/havasnewyork/IBM-Watson-Developer-Certification-Study-Guide) of Jeronimo De Leon for a more complete Watson certification study guide.
